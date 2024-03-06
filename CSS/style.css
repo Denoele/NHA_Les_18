@@ -1,4 +1,6 @@
-[class*="col-"] {width: 100%;}@media only screen and (min-width: 768px) {[class*="col-"] {float: left;padding: 15px;}}
+
+[class*="col-"] {width: 100%;}@media only screen and (min-width: 600px) {[class*="col-"] {float: left;padding: 15px;}}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -12,36 +14,61 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;}@media all and (min-width: 600px) {body{background-color: green;}
+}
+/* Use a media query to add a break point at 600px: */
+@media screen and (max-width: 600px) {
+    .artikels , .weetjes , .footer{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
 
-.weetjes {
-    background-color: greenyellow;height: 350px;
-}
-.artikels {
-    background-color: blueviolet;height: 350px; 
-}
-body{background-color: blue;}@media only screen and (max-width: 768px) {body{background-color: red;}
-}
 #header {
-    background-color: olive;
-    width: auto; height: 200px;/* hoogte foto */
-    background: url(../Afbeeldingen/Wetteren.jpg) no-repeat;
+
+    height: 180px; /* hoogte foto */
+    background: url(../Afbeeldingen/Wetteren.jpg) no-repeat; background-position-x: center;
+    text-align: center;
 }
-#speelplein {
-    width: auto; height: 150px;/* hoogte foto */
-}
-#zwembad {
-    width: auto; height: 200px;/* hoogte foto */
-}
+
+.h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: brown;
+    }
 
 img{
     float: right;
     border-radius: 5px;
     border: 2px dotted white;
     padding: 5px;
-    
 }
-h1 {
-    font-family: verdana;
-    font-size: 30px;
-    color: chocolate;
-   }
+.weetjes {
+    background-color: greenyellow;height: 350px;
+}
+.artikels {
+     background-color: blueviolet;height: 350px; 
+}
+#speelplein {
+    
+    width: auto; height: 150px;/* hoogte foto */
+}
+#zwembad {
+    width: auto; height: 200px;/* hoogte foto */
+}
+.menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: salmon;
+  }
