@@ -19,12 +19,12 @@ body{
     flex-direction: column;
     background-color: lightgray;}@media all and (min-width: 600px) {body{background-color: green;}
 }
-/* Use a media query to add a break point at 600px: 
+/* Use a media query to add a break point at 600px: */
 @media screen and (max-width: 600px) {
     .artikels , .weetjes , .footer{
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
-  }*/
+  }
 
 #header {
 
