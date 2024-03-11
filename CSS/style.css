@@ -21,7 +21,7 @@ body{
 }
 /* Use a media query to add a break point at 600px: */
 @media screen and (max-width: 600px) {
-    .artikels , .weetjes , .footer , img{
+    .artikels , .weetjes , .footer{
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
   }
@@ -43,6 +43,7 @@ img{
     border-radius: 5px;
     border: 2px dotted white;
     padding: 5px;
+    width: 150px
 }
 .weetjes {
     background-color: greenyellow;height: 350px;
