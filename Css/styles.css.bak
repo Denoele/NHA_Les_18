@@ -1,0 +1,65 @@
+[class*="col-"] {width: 100%;}@media only screen and (min-width: 768px) [class*="col-"] float: left;{padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.menu li {
+padding: 8px;
+margin-bottom: 7px;
+background-color: black;
+color: white;
+}
+.menu li:hover {
+background-color: green;
+}
+body{background-color: rgb(122, 197, 24);
+}
+a{color: white;}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="text"], input[type="email"], textarea, select,
+button{display: block;margin: 25px;width: 400px;box-sizing: border-box;
+border-radius: 4px; box-shadow: inset 2px 2px 5px lightgreen;
+}
+textarea{height: 100px;padding: 5px 4px;
+}
+
+button:active{background-color: darkgreen;
+    color: white;
+    border-radius: 4px; 
+    box-shadow: inset 2px 2px 5px blue;
+}
+table, th, td {border: 1px solid;margin-left: auto; margin-right: auto;
+}
+div{ display: block;text-align: center; 
+    padding: 5px 50px 50px 12px;
+}
+div.header {
+    width:1330px;
+    height:140px;
+	padding:10px;
+	background-color: olive;
+    color: green;
+}
+div.foto1 { border-style: dotted;color: green;
+}
+div.welkom{ text-align: right; width: 700px; 
+}
